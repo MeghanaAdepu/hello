@@ -1,0 +1,64 @@
+/* Container for the inputs */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  margin: auto;
+  margin-top: 200px;
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-attachment: fixed;
+}
+
+/* Grouping for each input field and button */
+.input-group {
+  display: flex;
+  flex-direction: column; /* Stack inputs and buttons vertically */
+  align-items: center; /* Center the items horizontally */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Make input group full width */
+}
+
+/* Style for input fields */
+.input-group input[type="email"],
+.input-group input[type="text"] {
+  border-radius: 20px; /* Creates a rounded shape */
+  padding: 10px 15px;
+  border: 1px solid #ccc; /* Border color */
+  width: 100%; /* Make input fields full width */
+  margin-bottom: 10px; /* Space between inputs and buttons */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style for buttons */
+.input-group button {
+  width: calc(100% - 20px); /* Make buttons full width with some padding */
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Style for the "Send OTP" button */
+.input-group button:nth-child(3) {
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+}
+
+/* Style for the "Verify OTP" button */
+.input-group button:nth-child(4) {
+  background-color: #3000b4; /* Green color */
+  color: #fff; /* White text color */
+}
+
+/* Hover effects for buttons */
+.input-group button:hover {
+  opacity: 0.9; /* Slightly reduce opacity on hover */
+}
